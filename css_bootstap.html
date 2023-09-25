@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button:hover ~ .lorem {
+            display:block;
+
+        }
+        .lorem{
+            display: none;
+        }
+        .lorem1{
+            visibility: hidden;
+        }
+        .button:hover + .lorem1{
+            visibility: visible;
+        }
+        .input{
+            width: 10%;
+
+        }
+        .buttonone:hover ~ .input{
+            width: 35%;
+            background-color:brown;
+            transition:width 2s  ease-in-out;
+            
+        }
+        .button2:hover ~ .input{
+            width:55%;
+            background-color: rgb(176, 231, 26);
+            transition:width 2s  ease-in-out;
+         }
+         .button3:hover ~ .input{
+            width:70%;
+            background-color: rgb(132, 50, 209);
+            transition:width 2s ease-in-out;
+         }
+         .button4:hover ~ .input{
+            width:90%;
+            background-color: rgba(20, 68, 4, 0.577);
+            transition:width 2s ease-in-out;
+            transform-origin: 0%;
+            transition-delay: 100%;
+         }
+
+
+        .nav1{
+            float:left;
+            width:150px;
+            height: 230px;
+            position: relative;
+            background-color: blueviolet;
+        
+        }
+        a{
+            text-decoration: none;
+            background-color: rgb(196, 196, 228);
+            position: relative;
+            top: 40px;
+        }
+        .item1{
+           padding:10px;
+            background-color: rgb(220, 220, 245);
+        }
+        .item2{
+           padding: 10px;
+            background-color: beige;
+        }
+        .item3{
+            padding: 10px;
+            background-color: rgb(235, 221, 246);
+        }
+        .item4{
+            padding: 10px;
+            background-color: beige;
+        }
+        .exec{
+            overflow: scroll;
+            background-color: rgb(224, 141, 141);
+            height: 200px;
+        }
+        .card{
+           width: 40%;
+            box-shadow: 0px 10px 10px 0px rgba(0,0,0, 0.3);
+        
+        }
+        .card:hover{
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0, 0.89);
+        }
+        .badges{
+            background-color: black;
+            color: antiquewhite;
+            width:130px;
+            padding: 10px;
+            font-size: xx-large;
+        }
+        sup{
+              vertical-align:super;
+              font-size: large;
+              background-color:red;
+              border-radius: 30%;
+              padding: 10px;
+            
+        }
+        .loader{
+            border:16px solid greenyellow;
+            border-radius: 50%;
+            border-top: 16px solid black;
+            width: 200px;
+            height: 200px;
+            animation: spin 2s linear infinite;
+
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+           100% { transform: rotate(360deg); }
+        }
+        
+
+    </style>
+
+
+
+</head>
+<body>
+   
+    <fieldset style="background-color: aqua;">
+        <button class="button">Display tag </button>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel blanditiis magni aut omnis praesentium sit tenetur itaque quaerat cum quidem consequuntur ut sapiente, ipsum, reiciendis optio earum necessitatibus accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur quisquam quod dolorem laborum reprehenderit deleniti ut, eos eaque quas ad voluptas ullam vel exercitationem sunt atque illum in officiis.
+        </p>
+   </fieldset>
+   <br><br>
+
+   <fieldset style="background-color: aqua;">
+         <button class="button">Visiblity tag </button>
+          <p class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel blanditiis magni aut omnis praesentium sit tenetur itaque quaerat cum quidem consequuntur ut sapiente, ipsum, reiciendis optio earum necessitatibus accusamus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur quisquam quod dolorem laborum reprehenderit deleniti ut, eos eaque quas ad voluptas ullam vel exercitationem sunt atque illum in officiis.
+         </p>
+   </fieldset>
+<br><br>
+
+     <fieldset>
+        Progress
+       
+        
+            <br><br>
+            <button class="buttonone">Poor</button>  
+            <button class="button2">Avg</button> 
+            <button class="button3">Good</button> 
+            <button class="button4">Excellent</button> <br><br>
+            
+        <div class=input>
+            <input type="text" style="width:4%; background-color: rgb(21, 6, 6);"> 
+        </div>
+     </fieldset>
+     <br><br><br><br>
+
+     <nav>
+        <fieldset class="nav1">
+            <a href="#exec1" class="item1">item1</a>
+            <a href="#exec2" class="item2">item2</a><br><br>
+            <a href="#exec3" class="item3">item3</a> <br><br>
+            <a href="#exec4" class="item4">item4</a> <br><br>  
+        
+
+       </fieldset>
+     </nav>
+
+       <div class="exec">
+        <div id="exec1">
+            EXERCISE 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ut accusamus maxime doloremque numquam repellendus temporibus adipisci quod delectus cumque ipsa, aperiam animi veritatis alias quae nobis cum? Saepe, aliquam!</p>
+       </div>
+
+        <div id="exec2">
+            EXERCISE 2
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dicta. Nemo quos doloribus ut culpa ipsam animi. Mollitia illo quia deleniti facilis quasi tempore vel sapiente! Blanditiis, adipisci doloribus? Adipisci.</p>
+     </div>
+
+     <div id="exec3">
+        EXERCISE 3
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim eaque quam quasi excepturi, tempora officia nisi quas nihil, praesentium necessitatibus fugiat, delectus repudiandae magnam? In voluptas quo suscipit quis labore.</p>
+     </div>
+
+     <div id="exec4">
+        EXERCISE 4
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos reiciendis perferendis officiis iusto. Cumque harum commodi voluptate assumenda. Incidunt corrupti temporibus ut laboriosam corporis odio dolores eveniet eaque commodi.</p>
+     </div>
+    
+
+       </div>
+      <br><br><br>
+
+      <hr>
+
+       <h1>CARDS</h1>
+       <div class="card">
+            <img src="./photo_sowmya.jpg" alt="sowmya" style="width: 100%;" >
+           <div>
+              <h4><b>SOWMYA</b></h4>
+              <p>Engineer and Chef</p>
+          </div>
+       </div>
+
+       <hr>
+
+
+       <h1><center> Badges</center></h1>
+      <p class="badges">
+          Messages<sup>99+</sup>
+      </p>
+
+      <hr>
+
+      <h1><center>spinner</center></h1>
+      <div class="loader"></div>
+
+
+       
+
+
+
+
+</div>
+
+    
+</body>
+</html>
